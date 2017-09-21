@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A31D9E9A5D00EB8EC8A9D2204200FAB63E55CBBB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A31D9E9A5D00EB8EC8A9D2204200FAB63E55CBBB" : 9223372036854775807,
+    "8F9A35C2D375C5808E01E067E8BA096CF42E86A7" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3974B3D9-F8EE-4263-8C12-9DB68CCB7396",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A31D9E9A5D00EB8EC8A9D2204200FAB63E55CBBB" : "SmartGaitVideoMotion\/",
+    "8F9A35C2D375C5808E01E067E8BA096CF42E86A7" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SmartGaitVideoMotion",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SmartGaitVideoMotion.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:franciscocgoncalves\/SmartGait.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8F9A35C2D375C5808E01E067E8BA096CF42E86A7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:franciscocgoncalves\/SmartGaitVideoMotion.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A31D9E9A5D00EB8EC8A9D2204200FAB63E55CBBB"
+    }
+  ]
+}

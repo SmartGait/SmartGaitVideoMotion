@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>CorePlot.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SmartGaitVideoMotion.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SmartGaitVideoMotionTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SmartGaitVideoMotionUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftCSV.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>365C83E1A4A2B5A3292CFDBD7C009B9F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>64F6911C90CDBD2C7E4BCDCFB92E645E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6C2326A3AAD117B4D631BF333C28C9CA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C2F45722EF9760BC34605196047D94B7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EAE3ADBA796237C477547C0AA11934E6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

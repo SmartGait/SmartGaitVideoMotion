@@ -1,0 +1,28 @@
+PODS:
+  - CorePlot (2.2)
+  - SwiftCSV (0.4.0)
+  - SwiftCSVExport (1.0.0)
+
+DEPENDENCIES:
+  - CorePlot
+  - SwiftCSV (from `https://github.com/naoty/swiftcsv.git`, branch `develop`)
+  - SwiftCSVExport
+
+EXTERNAL SOURCES:
+  SwiftCSV:
+    :branch: develop
+    :git: https://github.com/naoty/swiftcsv.git
+
+CHECKOUT OPTIONS:
+  SwiftCSV:
+    :commit: 30f45b5e1d0f067b8964eafa201796a6b3545e8b
+    :git: https://github.com/naoty/swiftcsv.git
+
+SPEC CHECKSUMS:
+  CorePlot: cbe0c6e14220705e32e06a89c7d6a5a908b7d7d8
+  SwiftCSV: 6ed5c41ada755a3bfc9e245207bd362c23cb3ca6
+  SwiftCSVExport: 1e3563d5cd1ec854bf58ae952de22936ca5b0853
+
+PODFILE CHECKSUM: 446edc14bd47404ceff23ddd86f747427a4e43ed
+
+COCOAPODS: 1.2.0

@@ -1,0 +1,6 @@
+framework module Pods_SmartGaitVideoMotion {
+  umbrella header "Pods-SmartGaitVideoMotion-umbrella.h"
+
+  export *
+  module * { export * }
+}

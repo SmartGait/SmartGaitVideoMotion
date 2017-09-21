@@ -1,0 +1,968 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CCE3F2A90CE52F412AD2B8B /* Pods_SmartGaitVideoMotionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47ABDDBAC7644640E19FB779 /* Pods_SmartGaitVideoMotionUITests.framework */; };
+		69E0F608631431C7E4795D8C /* Pods_SmartGaitVideoMotionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E38BCA732E8B92E3ECD9255D /* Pods_SmartGaitVideoMotionTests.framework */; };
+		79068A741EDCCEAB00BE9810 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79068A731EDCCEAB00BE9810 /* Graph.swift */; };
+		79068A761EDCDE5600BE9810 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79068A751EDCDE5600BE9810 /* Video.swift */; };
+		79068A781EDCE52500BE9810 /* RawVideoMotionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79068A771EDCE52500BE9810 /* RawVideoMotionViewModel.swift */; };
+		79170A401EDC382800B69345 /* SelectModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79170A3F1EDC382800B69345 /* SelectModeViewController.swift */; };
+		79170A431EDC48A100B69345 /* SelectDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79170A421EDC48A100B69345 /* SelectDataViewModel.swift */; };
+		79170A451EDC48D200B69345 /* SelectFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79170A441EDC48D200B69345 /* SelectFieldView.swift */; };
+		79170A471EDC4F9C00B69345 /* ClassifiedDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79170A461EDC4F9C00B69345 /* ClassifiedDataViewModel.swift */; };
+		79170A491EDC6AD400B69345 /* SelectField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79170A481EDC6AD400B69345 /* SelectField.swift */; };
+		79170A4B1EDC6BFF00B69345 /* RawDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79170A4A1EDC6BFF00B69345 /* RawDataViewModel.swift */; };
+		79170A4E1EDC6F6F00B69345 /* GraphIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79170A4D1EDC6F6F00B69345 /* GraphIdentifier.swift */; };
+		79170A501EDC6F8200B69345 /* Selecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79170A4F1EDC6F8200B69345 /* Selecting.swift */; };
+		79170A521EDC6F9500B69345 /* CMTimeKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79170A511EDC6F9500B69345 /* CMTimeKeys.swift */; };
+		79170A541EDC6FA100B69345 /* VideoOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79170A531EDC6FA100B69345 /* VideoOrientation.swift */; };
+		79170A571EDC6FC300B69345 /* DataPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79170A561EDC6FC300B69345 /* DataPath.swift */; };
+		79170A591EDC70B600B69345 /* CSVHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79170A581EDC70B600B69345 /* CSVHelper.swift */; };
+		792DFCDD1E6EEDB2002D53F7 /* SelectDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792DFCDC1E6EEDB2002D53F7 /* SelectDataViewController.swift */; };
+		792FAB351EDCF19300DF68EF /* VideoMotionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792FAB341EDCF19300DF68EF /* VideoMotionState.swift */; };
+		792FAB371EDCF1E600DF68EF /* ClassifiedVideoMotionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792FAB361EDCF1E600DF68EF /* ClassifiedVideoMotionViewModel.swift */; };
+		792FAB391EDCF21A00DF68EF /* VideoMotionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792FAB381EDCF21A00DF68EF /* VideoMotionViewModel.swift */; };
+		792FAB3B1EDCF7A200DF68EF /* VideoMotionDataPlotDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792FAB3A1EDCF7A200DF68EF /* VideoMotionDataPlotDataSource.swift */; };
+		792FAB3E1EDCFB7000DF68EF /* ClassifiedDataPlotDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792FAB3D1EDCFB7000DF68EF /* ClassifiedDataPlotDataSource.swift */; };
+		7944513B1EDC79BE00C2AB7B /* CPTXYGraph+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7944513A1EDC79BE00C2AB7B /* CPTXYGraph+Identifier.swift */; };
+		7944513D1EDC8FC300C2AB7B /* RawDataPlotDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7944513C1EDC8FC300C2AB7B /* RawDataPlotDataSource.swift */; };
+		7948645C1EDF1C610053C01E /* VideoMotionWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7948645B1EDF1C610053C01E /* VideoMotionWindowController.swift */; };
+		7948645F1EDF1DFD0053C01E /* VideoMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7948645D1EDF1DFD0053C01E /* VideoMotionViewController.swift */; };
+		794864601EDF1DFD0053C01E /* VideoMotionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7948645E1EDF1DFD0053C01E /* VideoMotionViewController.xib */; };
+		794864621EDF2BA70053C01E /* Exportable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794864611EDF2BA70053C01E /* Exportable.swift */; };
+		7957FD901EF2AD3400655F03 /* RawClassifiedMotionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7957FD8F1EF2AD3400655F03 /* RawClassifiedMotionData.swift */; };
+		7957FD921EF2ADDB00655F03 /* RawClassifiedDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7957FD911EF2ADDB00655F03 /* RawClassifiedDataViewModel.swift */; };
+		7957FD941EF2B28300655F03 /* RawClassifiedVideoMotionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7957FD931EF2B28300655F03 /* RawClassifiedVideoMotionViewModel.swift */; };
+		7957FD961EF2B38500655F03 /* RawClassifiedDataPlotDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7957FD951EF2B38400655F03 /* RawClassifiedDataPlotDataSource.swift */; };
+		796E5C871E6652D900A4AAA0 /* MotionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796E5C821E6652D900A4AAA0 /* MotionData.swift */; };
+		796E5C881E6652D900A4AAA0 /* String+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796E5C831E6652D900A4AAA0 /* String+Error.swift */; };
+		796E5C891E6652D900A4AAA0 /* SmartGait.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 796E5C841E6652D900A4AAA0 /* SmartGait.m4v */; };
+		796E5C8A1E6652D900A4AAA0 /* iOS-walking-outbound.csv in Resources */ = {isa = PBXBuildFile; fileRef = 796E5C851E6652D900A4AAA0 /* iOS-walking-outbound.csv */; };
+		796E5C8B1E6652D900A4AAA0 /* watchOS-walking-outbound.csv in Resources */ = {isa = PBXBuildFile; fileRef = 796E5C861E6652D900A4AAA0 /* watchOS-walking-outbound.csv */; };
+		79938CB11E64D9C200242A48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79938CB01E64D9C200242A48 /* AppDelegate.swift */; };
+		79938CB31E64D9C200242A48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79938CB21E64D9C200242A48 /* ViewController.swift */; };
+		79938CB51E64D9C200242A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79938CB41E64D9C200242A48 /* Assets.xcassets */; };
+		79938CB81E64D9C200242A48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79938CB61E64D9C200242A48 /* Main.storyboard */; };
+		79938CC31E64D9C300242A48 /* SmartGaitVideoMotionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79938CC21E64D9C300242A48 /* SmartGaitVideoMotionTests.swift */; };
+		79938CCE1E64D9C300242A48 /* SmartGaitVideoMotionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79938CCD1E64D9C300242A48 /* SmartGaitVideoMotionUITests.swift */; };
+		79D1A6111EDC9A3E00934E3E /* RawDataPlotAreaDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1A6101EDC9A3E00934E3E /* RawDataPlotAreaDelegate.swift */; };
+		79D1A6131EDC9ACB00934E3E /* RawPlotSpaceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1A6121EDC9ACB00934E3E /* RawPlotSpaceDelegate.swift */; };
+		79D267CF1E952F4C00823C2B /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D267CE1E952F4C00823C2B /* Buffer.swift */; };
+		79DA14221EA267560071E86C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DA14211EA267560071E86C /* Result.swift */; };
+		79DF23B51EE0224000C535C1 /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF23B41EE0224000C535C1 /* Classification.swift */; };
+		79DF23B71EE0225500C535C1 /* RawMotionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF23B61EE0225500C535C1 /* RawMotionData.swift */; };
+		79DF23B91EE0235C00C535C1 /* ClassifiedMotionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF23B81EE0235C00C535C1 /* ClassifiedMotionData.swift */; };
+		79DF23BB1EE02FA100C535C1 /* MergedMotionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF23BA1EE02FA100C535C1 /* MergedMotionData.swift */; };
+		79E9EBBB1E6D885E008B3AEE /* CSVExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9EBBA1E6D885E008B3AEE /* CSVExport.swift */; };
+		F2A136136C01FBC656BCD247 /* Pods_SmartGaitVideoMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9CD3A9540F597D7EEC702D6 /* Pods_SmartGaitVideoMotion.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79938CBF1E64D9C300242A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79938CA51E64D9C200242A48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79938CAC1E64D9C200242A48;
+			remoteInfo = SmartGaitVideoMotion;
+		};
+		79938CCA1E64D9C300242A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79938CA51E64D9C200242A48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79938CAC1E64D9C200242A48;
+			remoteInfo = SmartGaitVideoMotion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10E62A45D620B13B642E549D /* Pods-SmartGaitVideoMotionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGaitVideoMotionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartGaitVideoMotionUITests/Pods-SmartGaitVideoMotionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B01F6382281FD8DC2FCCD80 /* Pods-SmartGaitVideoMotionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGaitVideoMotionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartGaitVideoMotionTests/Pods-SmartGaitVideoMotionTests.release.xcconfig"; sourceTree = "<group>"; };
+		3B5CB6522245D5E7FDE0A7C6 /* Pods-SmartGaitVideoMotion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGaitVideoMotion.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartGaitVideoMotion/Pods-SmartGaitVideoMotion.release.xcconfig"; sourceTree = "<group>"; };
+		3DF22831806898AA79385C89 /* Pods-SmartGaitVideoMotionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGaitVideoMotionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartGaitVideoMotionTests/Pods-SmartGaitVideoMotionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		47ABDDBAC7644640E19FB779 /* Pods_SmartGaitVideoMotionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartGaitVideoMotionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79068A731EDCCEAB00BE9810 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		79068A751EDCDE5600BE9810 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		79068A771EDCE52500BE9810 /* RawVideoMotionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawVideoMotionViewModel.swift; sourceTree = "<group>"; };
+		79170A3F1EDC382800B69345 /* SelectModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectModeViewController.swift; sourceTree = "<group>"; };
+		79170A421EDC48A100B69345 /* SelectDataViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDataViewModel.swift; sourceTree = "<group>"; };
+		79170A441EDC48D200B69345 /* SelectFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectFieldView.swift; sourceTree = "<group>"; };
+		79170A461EDC4F9C00B69345 /* ClassifiedDataViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifiedDataViewModel.swift; sourceTree = "<group>"; };
+		79170A481EDC6AD400B69345 /* SelectField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectField.swift; sourceTree = "<group>"; };
+		79170A4A1EDC6BFF00B69345 /* RawDataViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawDataViewModel.swift; sourceTree = "<group>"; };
+		79170A4D1EDC6F6F00B69345 /* GraphIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphIdentifier.swift; sourceTree = "<group>"; };
+		79170A4F1EDC6F8200B69345 /* Selecting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Selecting.swift; sourceTree = "<group>"; };
+		79170A511EDC6F9500B69345 /* CMTimeKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMTimeKeys.swift; sourceTree = "<group>"; };
+		79170A531EDC6FA100B69345 /* VideoOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoOrientation.swift; sourceTree = "<group>"; };
+		79170A561EDC6FC300B69345 /* DataPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPath.swift; sourceTree = "<group>"; };
+		79170A581EDC70B600B69345 /* CSVHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVHelper.swift; sourceTree = "<group>"; };
+		792DFCDC1E6EEDB2002D53F7 /* SelectDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDataViewController.swift; sourceTree = "<group>"; };
+		792FAB341EDCF19300DF68EF /* VideoMotionState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoMotionState.swift; sourceTree = "<group>"; };
+		792FAB361EDCF1E600DF68EF /* ClassifiedVideoMotionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifiedVideoMotionViewModel.swift; sourceTree = "<group>"; };
+		792FAB381EDCF21A00DF68EF /* VideoMotionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoMotionViewModel.swift; sourceTree = "<group>"; };
+		792FAB3A1EDCF7A200DF68EF /* VideoMotionDataPlotDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoMotionDataPlotDataSource.swift; sourceTree = "<group>"; };
+		792FAB3D1EDCFB7000DF68EF /* ClassifiedDataPlotDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifiedDataPlotDataSource.swift; sourceTree = "<group>"; };
+		7944513A1EDC79BE00C2AB7B /* CPTXYGraph+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CPTXYGraph+Identifier.swift"; sourceTree = "<group>"; };
+		7944513C1EDC8FC300C2AB7B /* RawDataPlotDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawDataPlotDataSource.swift; sourceTree = "<group>"; };
+		7948645B1EDF1C610053C01E /* VideoMotionWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoMotionWindowController.swift; sourceTree = "<group>"; };
+		7948645D1EDF1DFD0053C01E /* VideoMotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoMotionViewController.swift; sourceTree = "<group>"; };
+		7948645E1EDF1DFD0053C01E /* VideoMotionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoMotionViewController.xib; sourceTree = "<group>"; };
+		794864611EDF2BA70053C01E /* Exportable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exportable.swift; sourceTree = "<group>"; };
+		7957FD8F1EF2AD3400655F03 /* RawClassifiedMotionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawClassifiedMotionData.swift; sourceTree = "<group>"; };
+		7957FD911EF2ADDB00655F03 /* RawClassifiedDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawClassifiedDataViewModel.swift; sourceTree = "<group>"; };
+		7957FD931EF2B28300655F03 /* RawClassifiedVideoMotionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawClassifiedVideoMotionViewModel.swift; sourceTree = "<group>"; };
+		7957FD951EF2B38400655F03 /* RawClassifiedDataPlotDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawClassifiedDataPlotDataSource.swift; sourceTree = "<group>"; };
+		796E5C821E6652D900A4AAA0 /* MotionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionData.swift; sourceTree = "<group>"; };
+		796E5C831E6652D900A4AAA0 /* String+Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Error.swift"; sourceTree = "<group>"; };
+		796E5C841E6652D900A4AAA0 /* SmartGait.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = SmartGait.m4v; sourceTree = "<group>"; };
+		796E5C851E6652D900A4AAA0 /* iOS-walking-outbound.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "iOS-walking-outbound.csv"; sourceTree = "<group>"; };
+		796E5C861E6652D900A4AAA0 /* watchOS-walking-outbound.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "watchOS-walking-outbound.csv"; sourceTree = "<group>"; };
+		79938CAD1E64D9C200242A48 /* SmartGaitVideoMotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartGaitVideoMotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79938CB01E64D9C200242A48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79938CB21E64D9C200242A48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79938CB41E64D9C200242A48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79938CB71E64D9C200242A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79938CB91E64D9C200242A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79938CBE1E64D9C300242A48 /* SmartGaitVideoMotionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartGaitVideoMotionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79938CC21E64D9C300242A48 /* SmartGaitVideoMotionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartGaitVideoMotionTests.swift; sourceTree = "<group>"; };
+		79938CC41E64D9C300242A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79938CC91E64D9C300242A48 /* SmartGaitVideoMotionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartGaitVideoMotionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79938CCD1E64D9C300242A48 /* SmartGaitVideoMotionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartGaitVideoMotionUITests.swift; sourceTree = "<group>"; };
+		79938CCF1E64D9C300242A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79D1A6101EDC9A3E00934E3E /* RawDataPlotAreaDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawDataPlotAreaDelegate.swift; sourceTree = "<group>"; };
+		79D1A6121EDC9ACB00934E3E /* RawPlotSpaceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawPlotSpaceDelegate.swift; sourceTree = "<group>"; };
+		79D267CE1E952F4C00823C2B /* Buffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buffer.swift; sourceTree = "<group>"; };
+		79DA14211EA267560071E86C /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		79DF23B41EE0224000C535C1 /* Classification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
+		79DF23B61EE0225500C535C1 /* RawMotionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawMotionData.swift; sourceTree = "<group>"; };
+		79DF23B81EE0235C00C535C1 /* ClassifiedMotionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifiedMotionData.swift; sourceTree = "<group>"; };
+		79DF23BA1EE02FA100C535C1 /* MergedMotionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergedMotionData.swift; sourceTree = "<group>"; };
+		79E9EBBA1E6D885E008B3AEE /* CSVExport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVExport.swift; sourceTree = "<group>"; };
+		98C19D0C2565D0DBF2C7A8CC /* Pods-SmartGaitVideoMotionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGaitVideoMotionUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartGaitVideoMotionUITests/Pods-SmartGaitVideoMotionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D9CD3A9540F597D7EEC702D6 /* Pods_SmartGaitVideoMotion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartGaitVideoMotion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD179840EFC394C67A54568 /* Pods-SmartGaitVideoMotion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartGaitVideoMotion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartGaitVideoMotion/Pods-SmartGaitVideoMotion.debug.xcconfig"; sourceTree = "<group>"; };
+		E38BCA732E8B92E3ECD9255D /* Pods_SmartGaitVideoMotionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartGaitVideoMotionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79938CAA1E64D9C200242A48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A136136C01FBC656BCD247 /* Pods_SmartGaitVideoMotion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79938CBB1E64D9C300242A48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E0F608631431C7E4795D8C /* Pods_SmartGaitVideoMotionTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79938CC61E64D9C300242A48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCE3F2A90CE52F412AD2B8B /* Pods_SmartGaitVideoMotionUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		003183A9BACE080EF66877E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9CD3A9540F597D7EEC702D6 /* Pods_SmartGaitVideoMotion.framework */,
+				E38BCA732E8B92E3ECD9255D /* Pods_SmartGaitVideoMotionTests.framework */,
+				47ABDDBAC7644640E19FB779 /* Pods_SmartGaitVideoMotionUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79170A411EDC488900B69345 /* SelectData */ = {
+			isa = PBXGroup;
+			children = (
+				792DFCDC1E6EEDB2002D53F7 /* SelectDataViewController.swift */,
+				79170A421EDC48A100B69345 /* SelectDataViewModel.swift */,
+				79170A481EDC6AD400B69345 /* SelectField.swift */,
+				79170A441EDC48D200B69345 /* SelectFieldView.swift */,
+				79170A461EDC4F9C00B69345 /* ClassifiedDataViewModel.swift */,
+				79170A4A1EDC6BFF00B69345 /* RawDataViewModel.swift */,
+				7957FD911EF2ADDB00655F03 /* RawClassifiedDataViewModel.swift */,
+			);
+			name = SelectData;
+			sourceTree = "<group>";
+		};
+		79170A4C1EDC6F2100B69345 /* VideoMotion */ = {
+			isa = PBXGroup;
+			children = (
+				79DF23B11EE0220000C535C1 /* Delegates */,
+				792FAB3C1EDCF92B00DF68EF /* DataSources */,
+				794864581EDF13F50053C01E /* ViewModels */,
+				79DF23B21EE0221700C535C1 /* Controllers */,
+				79068A751EDCDE5600BE9810 /* Video.swift */,
+				79068A731EDCCEAB00BE9810 /* Graph.swift */,
+				79170A561EDC6FC300B69345 /* DataPath.swift */,
+				79170A581EDC70B600B69345 /* CSVHelper.swift */,
+				792FAB341EDCF19300DF68EF /* VideoMotionState.swift */,
+			);
+			name = VideoMotion;
+			sourceTree = "<group>";
+		};
+		79170A551EDC6FB200B69345 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				79170A531EDC6FA100B69345 /* VideoOrientation.swift */,
+				79170A511EDC6F9500B69345 /* CMTimeKeys.swift */,
+				79170A4F1EDC6F8200B69345 /* Selecting.swift */,
+				79170A4D1EDC6F6F00B69345 /* GraphIdentifier.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		792FAB3C1EDCF92B00DF68EF /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				7944513C1EDC8FC300C2AB7B /* RawDataPlotDataSource.swift */,
+				7957FD951EF2B38400655F03 /* RawClassifiedDataPlotDataSource.swift */,
+				792FAB3A1EDCF7A200DF68EF /* VideoMotionDataPlotDataSource.swift */,
+				792FAB3D1EDCFB7000DF68EF /* ClassifiedDataPlotDataSource.swift */,
+			);
+			name = DataSources;
+			sourceTree = "<group>";
+		};
+		794864581EDF13F50053C01E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				79068A771EDCE52500BE9810 /* RawVideoMotionViewModel.swift */,
+				7957FD931EF2B28300655F03 /* RawClassifiedVideoMotionViewModel.swift */,
+				792FAB381EDCF21A00DF68EF /* VideoMotionViewModel.swift */,
+				792FAB361EDCF1E600DF68EF /* ClassifiedVideoMotionViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		79938CA41E64D9C200242A48 = {
+			isa = PBXGroup;
+			children = (
+				79938CAF1E64D9C200242A48 /* SmartGaitVideoMotion */,
+				79938CC11E64D9C300242A48 /* SmartGaitVideoMotionTests */,
+				79938CCC1E64D9C300242A48 /* SmartGaitVideoMotionUITests */,
+				79938CAE1E64D9C200242A48 /* Products */,
+				D20B376465CEE61DDE4415A4 /* Pods */,
+				003183A9BACE080EF66877E3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		79938CAE1E64D9C200242A48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79938CAD1E64D9C200242A48 /* SmartGaitVideoMotion.app */,
+				79938CBE1E64D9C300242A48 /* SmartGaitVideoMotionTests.xctest */,
+				79938CC91E64D9C300242A48 /* SmartGaitVideoMotionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79938CAF1E64D9C200242A48 /* SmartGaitVideoMotion */ = {
+			isa = PBXGroup;
+			children = (
+				79170A551EDC6FB200B69345 /* Enums */,
+				79E9EBBA1E6D885E008B3AEE /* CSVExport.swift */,
+				79DF23B31EE0223200C535C1 /* Models */,
+				794864611EDF2BA70053C01E /* Exportable.swift */,
+				796E5C831E6652D900A4AAA0 /* String+Error.swift */,
+				796E5C841E6652D900A4AAA0 /* SmartGait.m4v */,
+				796E5C851E6652D900A4AAA0 /* iOS-walking-outbound.csv */,
+				796E5C861E6652D900A4AAA0 /* watchOS-walking-outbound.csv */,
+				79938CB01E64D9C200242A48 /* AppDelegate.swift */,
+				79170A4C1EDC6F2100B69345 /* VideoMotion */,
+				79938CB41E64D9C200242A48 /* Assets.xcassets */,
+				79938CB61E64D9C200242A48 /* Main.storyboard */,
+				79170A3F1EDC382800B69345 /* SelectModeViewController.swift */,
+				79170A411EDC488900B69345 /* SelectData */,
+				79938CB91E64D9C200242A48 /* Info.plist */,
+				79D267CE1E952F4C00823C2B /* Buffer.swift */,
+				79DA14211EA267560071E86C /* Result.swift */,
+				7944513A1EDC79BE00C2AB7B /* CPTXYGraph+Identifier.swift */,
+			);
+			path = SmartGaitVideoMotion;
+			sourceTree = "<group>";
+		};
+		79938CC11E64D9C300242A48 /* SmartGaitVideoMotionTests */ = {
+			isa = PBXGroup;
+			children = (
+				79938CC21E64D9C300242A48 /* SmartGaitVideoMotionTests.swift */,
+				79938CC41E64D9C300242A48 /* Info.plist */,
+			);
+			path = SmartGaitVideoMotionTests;
+			sourceTree = "<group>";
+		};
+		79938CCC1E64D9C300242A48 /* SmartGaitVideoMotionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79938CCD1E64D9C300242A48 /* SmartGaitVideoMotionUITests.swift */,
+				79938CCF1E64D9C300242A48 /* Info.plist */,
+			);
+			path = SmartGaitVideoMotionUITests;
+			sourceTree = "<group>";
+		};
+		79DF23B11EE0220000C535C1 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				79D1A6121EDC9ACB00934E3E /* RawPlotSpaceDelegate.swift */,
+				79D1A6101EDC9A3E00934E3E /* RawDataPlotAreaDelegate.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		79DF23B21EE0221700C535C1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7948645B1EDF1C610053C01E /* VideoMotionWindowController.swift */,
+				79938CB21E64D9C200242A48 /* ViewController.swift */,
+				7948645D1EDF1DFD0053C01E /* VideoMotionViewController.swift */,
+				7948645E1EDF1DFD0053C01E /* VideoMotionViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		79DF23B31EE0223200C535C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				796E5C821E6652D900A4AAA0 /* MotionData.swift */,
+				7957FD8F1EF2AD3400655F03 /* RawClassifiedMotionData.swift */,
+				79DF23B61EE0225500C535C1 /* RawMotionData.swift */,
+				79DF23B81EE0235C00C535C1 /* ClassifiedMotionData.swift */,
+				79DF23BA1EE02FA100C535C1 /* MergedMotionData.swift */,
+				79DF23B41EE0224000C535C1 /* Classification.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D20B376465CEE61DDE4415A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAD179840EFC394C67A54568 /* Pods-SmartGaitVideoMotion.debug.xcconfig */,
+				3B5CB6522245D5E7FDE0A7C6 /* Pods-SmartGaitVideoMotion.release.xcconfig */,
+				3DF22831806898AA79385C89 /* Pods-SmartGaitVideoMotionTests.debug.xcconfig */,
+				2B01F6382281FD8DC2FCCD80 /* Pods-SmartGaitVideoMotionTests.release.xcconfig */,
+				10E62A45D620B13B642E549D /* Pods-SmartGaitVideoMotionUITests.debug.xcconfig */,
+				98C19D0C2565D0DBF2C7A8CC /* Pods-SmartGaitVideoMotionUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79938CAC1E64D9C200242A48 /* SmartGaitVideoMotion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79938CD21E64D9C300242A48 /* Build configuration list for PBXNativeTarget "SmartGaitVideoMotion" */;
+			buildPhases = (
+				74AF8863C04BAD91783A12C9 /* [CP] Check Pods Manifest.lock */,
+				79938CA91E64D9C200242A48 /* Sources */,
+				79938CAA1E64D9C200242A48 /* Frameworks */,
+				79938CAB1E64D9C200242A48 /* Resources */,
+				3933B6B123ABF2C3EDD180C5 /* [CP] Embed Pods Frameworks */,
+				2F258BAE8F520B75428312D8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartGaitVideoMotion;
+			productName = SmartGaitVideoMotion;
+			productReference = 79938CAD1E64D9C200242A48 /* SmartGaitVideoMotion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79938CBD1E64D9C300242A48 /* SmartGaitVideoMotionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79938CD51E64D9C300242A48 /* Build configuration list for PBXNativeTarget "SmartGaitVideoMotionTests" */;
+			buildPhases = (
+				E2BFE0B05201445DAB5FC647 /* [CP] Check Pods Manifest.lock */,
+				79938CBA1E64D9C300242A48 /* Sources */,
+				79938CBB1E64D9C300242A48 /* Frameworks */,
+				79938CBC1E64D9C300242A48 /* Resources */,
+				D38CDEC347088C9077BFF907 /* [CP] Embed Pods Frameworks */,
+				A7F43448938C5B7D305ECC8D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79938CC01E64D9C300242A48 /* PBXTargetDependency */,
+			);
+			name = SmartGaitVideoMotionTests;
+			productName = SmartGaitVideoMotionTests;
+			productReference = 79938CBE1E64D9C300242A48 /* SmartGaitVideoMotionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79938CC81E64D9C300242A48 /* SmartGaitVideoMotionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79938CD81E64D9C300242A48 /* Build configuration list for PBXNativeTarget "SmartGaitVideoMotionUITests" */;
+			buildPhases = (
+				4253468518B97AD7B4FB9B5B /* [CP] Check Pods Manifest.lock */,
+				79938CC51E64D9C300242A48 /* Sources */,
+				79938CC61E64D9C300242A48 /* Frameworks */,
+				79938CC71E64D9C300242A48 /* Resources */,
+				328C39E6B058DA95FC32A54C /* [CP] Embed Pods Frameworks */,
+				1C205C0E3FBE763FB50E9866 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79938CCB1E64D9C300242A48 /* PBXTargetDependency */,
+			);
+			name = SmartGaitVideoMotionUITests;
+			productName = SmartGaitVideoMotionUITests;
+			productReference = 79938CC91E64D9C300242A48 /* SmartGaitVideoMotionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79938CA51E64D9C200242A48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Francisco Gonçalves";
+				TargetAttributes = {
+					79938CAC1E64D9C200242A48 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 57ZR3QW87Q;
+						ProvisioningStyle = Automatic;
+					};
+					79938CBD1E64D9C300242A48 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 57ZR3QW87Q;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 79938CAC1E64D9C200242A48;
+					};
+					79938CC81E64D9C300242A48 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 57ZR3QW87Q;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 79938CAC1E64D9C200242A48;
+					};
+				};
+			};
+			buildConfigurationList = 79938CA81E64D9C200242A48 /* Build configuration list for PBXProject "SmartGaitVideoMotion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79938CA41E64D9C200242A48;
+			productRefGroup = 79938CAE1E64D9C200242A48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79938CAC1E64D9C200242A48 /* SmartGaitVideoMotion */,
+				79938CBD1E64D9C300242A48 /* SmartGaitVideoMotionTests */,
+				79938CC81E64D9C300242A48 /* SmartGaitVideoMotionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79938CAB1E64D9C200242A48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796E5C8B1E6652D900A4AAA0 /* watchOS-walking-outbound.csv in Resources */,
+				796E5C8A1E6652D900A4AAA0 /* iOS-walking-outbound.csv in Resources */,
+				796E5C891E6652D900A4AAA0 /* SmartGait.m4v in Resources */,
+				79938CB51E64D9C200242A48 /* Assets.xcassets in Resources */,
+				794864601EDF1DFD0053C01E /* VideoMotionViewController.xib in Resources */,
+				79938CB81E64D9C200242A48 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79938CBC1E64D9C300242A48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79938CC71E64D9C300242A48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C205C0E3FBE763FB50E9866 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartGaitVideoMotionUITests/Pods-SmartGaitVideoMotionUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F258BAE8F520B75428312D8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartGaitVideoMotion/Pods-SmartGaitVideoMotion-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		328C39E6B058DA95FC32A54C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartGaitVideoMotionUITests/Pods-SmartGaitVideoMotionUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3933B6B123ABF2C3EDD180C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartGaitVideoMotion/Pods-SmartGaitVideoMotion-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4253468518B97AD7B4FB9B5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		74AF8863C04BAD91783A12C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A7F43448938C5B7D305ECC8D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartGaitVideoMotionTests/Pods-SmartGaitVideoMotionTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D38CDEC347088C9077BFF907 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartGaitVideoMotionTests/Pods-SmartGaitVideoMotionTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2BFE0B05201445DAB5FC647 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79938CA91E64D9C200242A48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79170A431EDC48A100B69345 /* SelectDataViewModel.swift in Sources */,
+				7957FD901EF2AD3400655F03 /* RawClassifiedMotionData.swift in Sources */,
+				79170A451EDC48D200B69345 /* SelectFieldView.swift in Sources */,
+				79170A521EDC6F9500B69345 /* CMTimeKeys.swift in Sources */,
+				7957FD941EF2B28300655F03 /* RawClassifiedVideoMotionViewModel.swift in Sources */,
+				792DFCDD1E6EEDB2002D53F7 /* SelectDataViewController.swift in Sources */,
+				79938CB31E64D9C200242A48 /* ViewController.swift in Sources */,
+				79D1A6111EDC9A3E00934E3E /* RawDataPlotAreaDelegate.swift in Sources */,
+				79D267CF1E952F4C00823C2B /* Buffer.swift in Sources */,
+				79170A471EDC4F9C00B69345 /* ClassifiedDataViewModel.swift in Sources */,
+				796E5C881E6652D900A4AAA0 /* String+Error.swift in Sources */,
+				7948645C1EDF1C610053C01E /* VideoMotionWindowController.swift in Sources */,
+				79068A761EDCDE5600BE9810 /* Video.swift in Sources */,
+				79DF23B71EE0225500C535C1 /* RawMotionData.swift in Sources */,
+				79DF23B91EE0235C00C535C1 /* ClassifiedMotionData.swift in Sources */,
+				79DF23B51EE0224000C535C1 /* Classification.swift in Sources */,
+				7957FD961EF2B38500655F03 /* RawClassifiedDataPlotDataSource.swift in Sources */,
+				79068A781EDCE52500BE9810 /* RawVideoMotionViewModel.swift in Sources */,
+				79068A741EDCCEAB00BE9810 /* Graph.swift in Sources */,
+				79170A4B1EDC6BFF00B69345 /* RawDataViewModel.swift in Sources */,
+				79170A501EDC6F8200B69345 /* Selecting.swift in Sources */,
+				792FAB371EDCF1E600DF68EF /* ClassifiedVideoMotionViewModel.swift in Sources */,
+				79DF23BB1EE02FA100C535C1 /* MergedMotionData.swift in Sources */,
+				79170A541EDC6FA100B69345 /* VideoOrientation.swift in Sources */,
+				796E5C871E6652D900A4AAA0 /* MotionData.swift in Sources */,
+				79170A591EDC70B600B69345 /* CSVHelper.swift in Sources */,
+				79D1A6131EDC9ACB00934E3E /* RawPlotSpaceDelegate.swift in Sources */,
+				79170A4E1EDC6F6F00B69345 /* GraphIdentifier.swift in Sources */,
+				792FAB351EDCF19300DF68EF /* VideoMotionState.swift in Sources */,
+				7944513D1EDC8FC300C2AB7B /* RawDataPlotDataSource.swift in Sources */,
+				7957FD921EF2ADDB00655F03 /* RawClassifiedDataViewModel.swift in Sources */,
+				792FAB391EDCF21A00DF68EF /* VideoMotionViewModel.swift in Sources */,
+				792FAB3B1EDCF7A200DF68EF /* VideoMotionDataPlotDataSource.swift in Sources */,
+				792FAB3E1EDCFB7000DF68EF /* ClassifiedDataPlotDataSource.swift in Sources */,
+				79170A571EDC6FC300B69345 /* DataPath.swift in Sources */,
+				79170A491EDC6AD400B69345 /* SelectField.swift in Sources */,
+				7948645F1EDF1DFD0053C01E /* VideoMotionViewController.swift in Sources */,
+				79E9EBBB1E6D885E008B3AEE /* CSVExport.swift in Sources */,
+				7944513B1EDC79BE00C2AB7B /* CPTXYGraph+Identifier.swift in Sources */,
+				79DA14221EA267560071E86C /* Result.swift in Sources */,
+				79938CB11E64D9C200242A48 /* AppDelegate.swift in Sources */,
+				79170A401EDC382800B69345 /* SelectModeViewController.swift in Sources */,
+				794864621EDF2BA70053C01E /* Exportable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79938CBA1E64D9C300242A48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79938CC31E64D9C300242A48 /* SmartGaitVideoMotionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79938CC51E64D9C300242A48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79938CCE1E64D9C300242A48 /* SmartGaitVideoMotionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79938CC01E64D9C300242A48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79938CAC1E64D9C200242A48 /* SmartGaitVideoMotion */;
+			targetProxy = 79938CBF1E64D9C300242A48 /* PBXContainerItemProxy */;
+		};
+		79938CCB1E64D9C300242A48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79938CAC1E64D9C200242A48 /* SmartGaitVideoMotion */;
+			targetProxy = 79938CCA1E64D9C300242A48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79938CB61E64D9C200242A48 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79938CB71E64D9C200242A48 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79938CD01E64D9C300242A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79938CD11E64D9C300242A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		79938CD31E64D9C300242A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAD179840EFC394C67A54568 /* Pods-SmartGaitVideoMotion.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 57ZR3QW87Q;
+				INFOPLIST_FILE = SmartGaitVideoMotion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.franciscocgoncalves.SmartGaitVideoMotion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		79938CD41E64D9C300242A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B5CB6522245D5E7FDE0A7C6 /* Pods-SmartGaitVideoMotion.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 57ZR3QW87Q;
+				INFOPLIST_FILE = SmartGaitVideoMotion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.franciscocgoncalves.SmartGaitVideoMotion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		79938CD61E64D9C300242A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DF22831806898AA79385C89 /* Pods-SmartGaitVideoMotionTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 57ZR3QW87Q;
+				INFOPLIST_FILE = SmartGaitVideoMotionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.franciscocgoncalves.SmartGaitVideoMotionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartGaitVideoMotion.app/Contents/MacOS/SmartGaitVideoMotion";
+			};
+			name = Debug;
+		};
+		79938CD71E64D9C300242A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B01F6382281FD8DC2FCCD80 /* Pods-SmartGaitVideoMotionTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 57ZR3QW87Q;
+				INFOPLIST_FILE = SmartGaitVideoMotionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.franciscocgoncalves.SmartGaitVideoMotionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartGaitVideoMotion.app/Contents/MacOS/SmartGaitVideoMotion";
+			};
+			name = Release;
+		};
+		79938CD91E64D9C300242A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10E62A45D620B13B642E549D /* Pods-SmartGaitVideoMotionUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 57ZR3QW87Q;
+				INFOPLIST_FILE = SmartGaitVideoMotionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.franciscocgoncalves.SmartGaitVideoMotionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SmartGaitVideoMotion;
+			};
+			name = Debug;
+		};
+		79938CDA1E64D9C300242A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C19D0C2565D0DBF2C7A8CC /* Pods-SmartGaitVideoMotionUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 57ZR3QW87Q;
+				INFOPLIST_FILE = SmartGaitVideoMotionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.franciscocgoncalves.SmartGaitVideoMotionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SmartGaitVideoMotion;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79938CA81E64D9C200242A48 /* Build configuration list for PBXProject "SmartGaitVideoMotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79938CD01E64D9C300242A48 /* Debug */,
+				79938CD11E64D9C300242A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79938CD21E64D9C300242A48 /* Build configuration list for PBXNativeTarget "SmartGaitVideoMotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79938CD31E64D9C300242A48 /* Debug */,
+				79938CD41E64D9C300242A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79938CD51E64D9C300242A48 /* Build configuration list for PBXNativeTarget "SmartGaitVideoMotionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79938CD61E64D9C300242A48 /* Debug */,
+				79938CD71E64D9C300242A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79938CD81E64D9C300242A48 /* Build configuration list for PBXNativeTarget "SmartGaitVideoMotionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79938CD91E64D9C300242A48 /* Debug */,
+				79938CDA1E64D9C300242A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79938CA51E64D9C200242A48 /* Project object */;
+}
